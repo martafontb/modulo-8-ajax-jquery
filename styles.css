@@ -55,11 +55,6 @@ table {
 /* reset  */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
-@font-face {
-	font-family: 'CheeDemo' ;
-	src: url(CheeeDemo-HiYeastMedGravity.otf);
-}
-@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Oi&display=swap');
 
 @-webkit-keyframes slide-in-elliptic-top-fwd {
     0% {
