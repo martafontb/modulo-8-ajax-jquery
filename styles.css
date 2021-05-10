@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* reset  */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@font-face {
+	font-family: 'CheeDemo' ;
+	src: url(CheeeDemo-HiYeastMedGravity.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Arbutus&family=Oi&display=swap');
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-elliptic-top-fwd {
+    0% {
+      -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+              transform: translateY(-600px) rotateX(-30deg) scale(0);
+      -webkit-transform-origin: 50% 100%;
+              transform-origin: 50% 100%;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) rotateX(0) scale(1);
+              transform: translateY(0) rotateX(0) scale(1);
+      -webkit-transform-origin: 50% 1400px;
+              transform-origin: 50% 1400px;
+      opacity: 1;
+    }
+  }
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: slide-in-elliptic-top-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes shake-horizontal {
+	0%,
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+	  -webkit-transform: translateX(-10px);
+			  transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60% {
+	  -webkit-transform: translateX(10px);
+			  transform: translateX(10px);
+	}
+	80% {
+	  -webkit-transform: translateX(8px);
+			  transform: translateX(8px);
+	}
+	90% {
+	  -webkit-transform: translateX(-8px);
+			  transform: translateX(-8px);
+	}
+  }
+  @keyframes shake-horizontal {
+	0%,
+	100% {
+	  -webkit-transform: translateX(0);
+			  transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70% {
+	  -webkit-transform: translateX(-10px);
+			  transform: translateX(-10px);
+	}
+	20%,
+	40%,
+	60% {
+	  -webkit-transform: translateX(10px);
+			  transform: translateX(10px);
+	}
+	80% {
+	  -webkit-transform: translateX(8px);
+			  transform: translateX(8px);
+	}
+	90% {
+	  -webkit-transform: translateX(-8px);
+			  transform: translateX(-8px);
+	}
+  }
+  
+
+body {
+	padding:0 100px;
+	font-family: 'Space Grotesk', sans-serif;
+	background-image: url(chuck-norris.jpeg);
+	background-position: center top;
+}
+
+.sign {
+display: grid;
+place-items: center;
+position:absolute;
+left:60%;
+top:0;
+}
+
+button:hover {
+		-webkit-animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+				animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+img {
+	position:relative;
+}
+
+button {
+	position:absolute;
+    top:60%;
+	padding: 0.7em;
+	font-family: 'Arbutus', cursive;
+	-webkit-text-stroke: 2px #fdefe5;
+	color: #000;
+	background-color: transparent;
+	border:none;
+	font-size: 34px;
+}
+button:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+#joke {
+	position:absolute;
+	left:60%;
+	top:60%;
+	line-height: 1.3;
+	font-size: 24px;
+	padding: 0.7em;
+	margin-right: 5%;
+	background-color: #fdefe5;
+	border: 1px dashed saddlebrown;
+	color:saddlebrown;
+	}
